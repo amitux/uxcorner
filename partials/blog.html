@@ -1,0 +1,39 @@
+<!--
+==================================================
+Global Page Section Start
+================================================== -->
+<section class="global-page-header">
+	<div class="container">
+		<div class="section-heading">
+				<h1 class="title wow fadeInDown animated" data-wow-delay=".3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInDown;">WriteUps &amp; Talks</h1>
+				<p class="wow fadeInDown animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInDown;">
+					 Opinions, Principles, Processes and Artifacts on user experience. This also brings the commentary on latest design happennings across the globe. 
+				</p>
+			</div>
+	</div>
+	</section><!--/#Page header-->
+	<section id="blog-full-width">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12"  ng-repeat="data in blog">
+					<article class="wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">
+						<div class="blog-post-image">
+							<a href="#/blog/post/{{data.blogTitle}}"><img class="img-responsive" src="{{data.blogImage}}" alt="{{data.blogTitle}}" /></a>
+						</div>
+						<div class="blog-content">
+							<h2 class="blogpost-title">
+							<a href="#/blog/post/{{data.blogTitle}}">{{data.blogTitle}}</a>
+							</h2>
+							<div class="blog-meta">
+								<span>{{data.blogPostDate}}</span>
+								<span>by <a href="#/about">Amit</a></span>
+								<span><a href="#.">{{data.blogPostTag}}</a></span>
+							</div>
+							<p>{{data.blogSubTitle}}</p>
+							<a href="#/blog/post/{{data.blogTitle}}" class="btn btn-dafault btn-details">Continue Reading</a>
+						</div>
+						
+					</article>
+				</div>
+				</div>
+			</section>
